@@ -12,11 +12,25 @@
     <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
   </head>
   <style >
+
+
+  div{
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+    form{
+      border-radius: 20px;
+      background-color: #e8e8e8;
+
+
+    }
+
   </style>
 
   <body>
     <?php menu_user()  ?>
-    <h1></h1>
     <div class="container1">
       <div class="row header">
         <h1> LOGIN </h1>
@@ -24,34 +38,24 @@
       </div>
     <div class="row body">
       <form action="#">
-        <ul>
-          <li>
-            <p class="left">
+
+            <p class="">
               <label for="first_name">DNI</label>
               <input type="text" name="dni" placeholder="DNI" pattern="^[0-9]{8}$" title="El DNI debe de tener 8 caracteres de longitud sin puntos" required>
             </p>
-            <p class="pull-right">
+            <p class="">
               <label for="last_name">NOMBRE</label>
               <input type="text" name="nombre" placeholder="Nombre" pattern="^[a-zA-Z][a-zA-Z]{3,20}$" title="El Nombre debe de tener entre 3 y 20 caracteres de longitud" required>
             </p>
-          </li>
-          <li>
-  					<p class="pull-right">
+  					<p class="">
   						<label for="dni">APELLIDO</label>
               <input type="text" name="apellido" placeholder="Apellido" pattern="^[a-zA-Z][a-zA-Z]{3,20}$" title="El Apellido debe de tener entre 3 y 20 caracteres de longitud" required>
   					</p>
-            <p>
-              <label for="email">Email <span class="req">*</span></label>
-              <input type="email" name="email" placeholder="john.smith@gmail.com" />
-            </p>
-          </li>
-          <li><div class="divider"></div></li>
-          <li>
             <input type="submit" name="submit" value="Ingresar">
-          </li>
-        </ul>
-      </form>
 
+
+      </form>
+    </div>
 
   </body>
   </body>
