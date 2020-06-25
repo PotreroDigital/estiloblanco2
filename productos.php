@@ -1,3 +1,4 @@
+<?php include 'controles/funciones.php' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by TEMPLATED
@@ -24,8 +25,6 @@ Released   : 20130804
 
 </head>
 <body>
-
-
   <style>
 
 	</style>
@@ -35,12 +34,17 @@ Released   : 20130804
 <div id="header">
 	<div id="menu" class="container">
 		<ul>
-			<li class="current_page_item"><a href="home.php" accesskey="1" title="">Homepage</a></li>
-			<li><a href="productos.php" accesskey="1" title="">Productos</a></li>
-			<li><a href="#Marcas" accesskey="2" title="">Marcas</a></li>
-			<li><a href="#Contacto" accesskey="3" title="">log in</a></li>
-			<!--<li><a href="#" accesskey="4" title="">Careers</a></li>
-			<li><a href="#" accesskey="5" title="">Contact Us</a></li>-->
+      <?php
+          $rol="admin";
+
+            if ($rol=="admin"){
+              menu_admin();
+          } elseif ($rol=="secretario") {
+              menu_secretario();
+          } else {
+              menu_user();
+          }
+              ?>
 		</ul>
 	</div>
 </div>
