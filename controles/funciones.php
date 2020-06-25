@@ -24,8 +24,8 @@
         			<li><a href="productos.php" accesskey="1" title="">Productos</a></li>
         			<li><a href="#Marcas" accesskey="2" title="">Marcas</a></li>
         			<li><a href="login.php" accesskey="3" title="">log in</a></li>
-            	<li><a href="login.php" accesskey="3" title="">alta</a></li>
-        			<li><a href="login.php" accesskey="3" title="">B y M</a></li>
+            	<li><a href="abm/ingresar_alumno.php" accesskey="3" title="">alta</a></li>
+        			<li><a href="abm/buscar_dni.html" accesskey="3" title="">B y M</a></li>
         		</ul>
         	</div>';
           return;
@@ -38,7 +38,7 @@
         			<li><a href="productos.php" accesskey="1" title="">Productos</a></li>
         			<li><a href="#Marcas" accesskey="2" title="">Marcas</a></li>
         			<li><a href="login.php" accesskey="3" title="">log in</a></li>
-            	<li><a href="abm/ingresar_alumno.html" accesskey="3" title="">alta</a></li>
+            	<li><a href="abm/ingresar_alumno.php" accesskey="3" title="">alta</a></li>
         		</ul>
         	</div>';
           return;

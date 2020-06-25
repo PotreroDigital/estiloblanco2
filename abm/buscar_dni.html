@@ -3,14 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="boton.css">
   </head>
   <body>
-    <h2>Baja de Alumno</h2>
-    <p>Ingrese el DNI del alumno a eliminar de la base de datos.</p>
-    <form action="baja.php" method="post">
-      <input type="text" name="dni" placeholder="DNI">
-      <input type="submit" name="submit" value="Eliminar">
-      <button type="submit" name="modificar" formaction="modificar_alumno.php">Modificar</button>
-    </form>
+    <style >
+
+    body{
+
+      font-family: Arial; background-color: #18A383; font-size: 20px;
+
+    }
+    div{
+      border-radius: 3px;
+      background-color: #e8e8e8;
+      margin: 0 auto;
+      width: 300px;
+      text-align: center;
+      padding: 10px;
+
+    }
+    input, textarea{
+
+      outline: none;
+      border: 0px;
+
+    }
+    button, textarea{
+
+      outline: none;
+      border: 0px;
+
+    }
+    .field{
+      border: solid 1px #d1d1d1;
+      padding: 8px;
+      border-radius: 3px;
+    }
+    .field:focus{
+
+      border-color: #18A383;
+
+    }
+    /*
+    .dda{
+      border: solid 1px #d1d1d1;
+      padding: 8px;
+      border-radius: 3px;
+    }
+/*    h2{
+      margin: 0 auto;
+      width: 300px;
+      text-align: center;
+    }
+    p{
+      margin: 0 auto;
+      width: 300px;
+      text-align: center;
+
+    }
+    form{
+      margin: 0 auto;
+      width: 300px;
+      text-align: center;
+      padding: 10px;
+    }
+*/
+    </style>
+  <div class="">
+
+
+  <h2>Baja de Usuario</h2>
+  <p>Ingrese el DNI del Usuario a eliminar de la base de datos</p>
+  <form action="baja.php" method="post">
+    <p>Dni</p>
+    <input type="text" class="field" name="dni" placeholder="Dni" pattern="^[0-9]{8}$" title="El DNI debe de tener 8 caracteres de longitud sin puntos" required>
+    <p class="dda">
+      <input type="submit" class="btn btn-green" name="submit" value="Eliminar">
+      <button type="submit" class="btn btn-green" name="modificar" formaction="modificar_alumno.php">Modificar</button>
+    </p>
+  </form>
+    <!--
+    <input type="submit" class="btn btn-green" name="submit" value="Volver al Menu">
+    <a type="submit" class="btn btn-green" name="sumbit" href="home.php">Volver al Menu</a>
+    <button type="submit" class="btn btn-green" name="button" formaction="home.php">Volver al Menu</button>
+    -->
+</div>
   </body>
 </html>

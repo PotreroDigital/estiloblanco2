@@ -34,7 +34,7 @@ Released   : 20130804
 </div>
 
   <?php
-      $rol="secretario";
+      $rol="admin";
 
         if ($rol=="admin"){
           menu_admin();
